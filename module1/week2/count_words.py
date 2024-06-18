@@ -2,12 +2,21 @@ def read_file(file_path):
     with open(file_path, 'r') as file:
         data = file.read()
         file.close()
+    return data
+
+
+def preprocessing(data):
+    data = data.replace('\n', ' ')
+    data = data.replace('.', '')
+    data = data.replace(',', '')
+    data = data.replace('-', '')
     return data.split(' ')
 
 
 def count_words(file_path):
     result_count_words = {}
     data = read_file(file_path)
+    data = preprocessing(data)
     for word in data:
         word = word.lower()
         if word in result_count_words:

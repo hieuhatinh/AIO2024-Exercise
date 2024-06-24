@@ -1,7 +1,17 @@
-class Person:
+from abc import ABC, abstractmethod
+
+
+class Person(ABC):
     def __init__(self, name, yob):
         self._name = name
         self._yob = yob
+
+    def get_yob(self):
+        return self._yob
+
+    @abstractmethod
+    def describe(self):
+        pass
 
 
 class Student(Person):
@@ -50,7 +60,7 @@ class Ward:
         return number_doctors
 
     def sort_age(self):
-        self.__persons.sort(key=lambda person: person._yob, reverse=True)
+        self.__persons.sort(key=lambda person: person.get_yob(), reverse=True)
 
     def compute_average(self):
         sum_yob_teachers = 0
@@ -58,7 +68,7 @@ class Ward:
         for person in self.__persons:
             if isinstance(person, Teacher):
                 number_teachers += 1
-                sum_yob_teachers += person._yob
+                sum_yob_teachers += person.get_yob()
         return sum_yob_teachers / number_teachers
 
     def describe(self):

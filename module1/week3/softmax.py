@@ -14,7 +14,7 @@ class Softmax(torch.nn.Module):
 class SoftmaxStable(torch.nn.Module):
     def __init__(self):
         super().__init__()
-
+        
     def forward(self, x):
         c = torch.max(x)
         exp_x = torch.exp(x - c)

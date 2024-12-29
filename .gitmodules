@@ -1,0 +1,12 @@
+[submodule "module6/AIO2024-exercise_M06W01"]
+	path = module6/AIO2024-exercise_M06W01
+	url = https://github.com/hieuhatinh/AIO2024-exercise_M06W01.git
+[submodule "module6/AIO2024-exercise_M06W02"]
+	path = module6/AIO2024-exercise_M06W02
+	url = https://github.com/hieuhatinh/AIO2024-exercise_M06W02.git
+[submodule "module6/AIO2024-exercise_M06W03"]
+	path = module6/AIO2024-exercise_M06W03
+	url = https://github.com/hieuhatinh/AIO2024-exercise_M06W03.git
+[submodule "module6/AIO2024-exercise_M06W04"]
+	path = module6/AIO2024-exercise_M06W04
+	url = https://github.com/hieuhatinh/AIO2024-exercise_M06W04.git

@@ -3,6 +3,11 @@
 /module5/week3/data/
 /module5/week4/data/
 
+/module7/week1/dataset
+/module7/week1/split_dataset.ipynb
+/module7/week1/image-inpainting/weights/
+/module7/week1/super-resolution/weights/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
